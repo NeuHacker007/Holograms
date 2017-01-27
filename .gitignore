@@ -240,3 +240,11 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# no videofiles
+*.mp4
+*.wav
+*.mp3
+*.avi
+
+

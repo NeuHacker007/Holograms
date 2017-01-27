@@ -18,7 +18,7 @@ public class CursorManager : Singleton<CursorManager>
     public bool Hit { get; private set; }
 
 
-    private GazeStabilizer gaseGazeStabilizer;
+    private GazeStabilizer gazeGazeStabilizer;
     private Vector3 gazeOrigin;
     private Vector3 gazeDirection;
 
@@ -27,17 +27,28 @@ public class CursorManager : Singleton<CursorManager>
     {
         //get gaze stabilizer
 
+        gazeGazeStabilizer = GetComponent<GazeStabilizer>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         // assign camera position to gaze orign
+        gazeOrigin = Camera.main.transform.position;
 
 
-        // assign camera's main transform forward to gaze direction
+
+        //assign camera's main transform forward to gaze direction
+        gazeDirection = Camera.main.transform.forward;
 
         //Using gaze Stabilizer, call function updateheadstability
+
+        gazeGazeStabilizer.UpdateHeadStability(gazeOrigin, Camera.main.transform.rotation);
+
+        gazeOrigin = gazeGazeStabilizer.StableHeadPosition;
+
+        updateRaycast();
 
 
         //using gazeStabilizer get stable head position and assign it to gazeOrigin
