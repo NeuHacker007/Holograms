@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Guopin.unity
+- path: Assets/SceneChangeTest.unity
   isLoaded: 1
   isActive: 1

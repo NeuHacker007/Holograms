@@ -98,6 +98,7 @@
   <ItemGroup>
     <Compile Include="Assets\MadWonder\Cheshire\Cheshire.cs" />
     <Compile Include="Assets\Scripts\BoneControls.cs" />
+    <Compile Include="Assets\Scripts\ChangeSphereColor.cs" />
     <Compile Include="Assets\Scripts\CursorManager.cs" />
     <Compile Include="Assets\Scripts\GazeManager.cs" />
     <Compile Include="Assets\Scripts\GazeStabilizer.cs" />
@@ -105,7 +106,9 @@
     <Compile Include="Assets\Scripts\GuopinExpressionSet.cs" />
     <Compile Include="Assets\Scripts\GuopinMovement_navmesh.cs" />
     <Compile Include="Assets\Scripts\GuopinSpeak_LipSync.cs" />
+    <Compile Include="Assets\Scripts\SceneChangeManager.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Touchable.cs" />
     <Compile Include="Assets\Scripts\UMAExpression.cs" />
     <Compile Include="Assets\Scripts\VedioPlayer.cs" />
     <Compile Include="Assets\Tagarela\Example\TagarelaExampleController.cs" />
