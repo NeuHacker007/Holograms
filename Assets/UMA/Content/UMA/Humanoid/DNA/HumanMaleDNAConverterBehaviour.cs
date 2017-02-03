@@ -22,7 +22,7 @@ public class HumanMaleDNAConverterBehaviour : HumanoidDNAConverterBehaviour
 	/// Adjusts a skeleton to reflect the DNA values from UMA character data.
 	/// </summary>
 	/// <remarks>
-	/// This will set the postion, rotation, and scale of the various adjustment
+	/// This will set the postion, Rotation, and scale of the various adjustment
 	/// bones used by the UMA human rigs to generate a unique character shape.
 	/// Also calculates a somewhat realistic mass for the character and the
 	/// height and radius of their default collider.

@@ -113,7 +113,7 @@ namespace UMAEditor
 	//                         {{
 	//                             name = ""{0}"",
 	//                             position = new Vector3({1}f,{2}f,{3}f),
-	//                             rotation = new Quaternion({4}f,{5}f,{6}f,{7}f),
+	//                             Rotation = new Quaternion({4}f,{5}f,{6}f,{7}f),
 	//                             scale = new Vector3({8}f,{9}f,{10}f),
 	//                             transformModified = 0
 	//                         }});", hierarchy.name, hierarchy.localPosition.x, hierarchy.localPosition.y, hierarchy.localPosition.z, hierarchy.localRotation.x, hierarchy.localRotation.y, hierarchy.localRotation.z, hierarchy.localRotation.w, hierarchy.localScale.x, hierarchy.localScale.y, hierarchy.localScale.z);
@@ -122,7 +122,7 @@ namespace UMAEditor
 	//        //                 {
 	//        //                     name = "bone",
 	//        //                     position = new Vector3(0,1,2),
-	//        //                     rotation = new Quaternion(0,1,2,3),
+	//        //                     Rotation = new Quaternion(0,1,2,3),
 	//        //                     scale = new Vector3(1,1,1),
 	//        //                     transformModified = 0
 	//        //                 });
