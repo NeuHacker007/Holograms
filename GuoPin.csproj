@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\GuopinExpressionSet.cs" />
     <Compile Include="Assets\Scripts\GuopinMovement_navmesh.cs" />
     <Compile Include="Assets\Scripts\GuopinSpeak_LipSync.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\SceneChangeManager.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\Touchable.cs" />
