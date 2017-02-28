@@ -1,20 +1,22 @@
-﻿using UnityEngine;
+﻿using HoloToolkit.Unity;
+using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class VedioPlayer : MonoBehaviour
+public class VedioPlayer : Singleton<VedioPlayer>
 {
     //public MovieTexture movie;
     //public AudioSource audio;
-    private MovieTexture movie;
-    private AudioSource audio;
+    public MovieTexture movie { get; private set; }
+    public AudioSource audio { get; private set; }
     // Use this for initialization
     void Start()
     {
         movie = GetComponent<Renderer>().material.mainTexture as MovieTexture;
         audio = GetComponent<AudioSource>();
         audio.clip = movie.audioClip;
-        audio.Play();
-        movie.Play();
+        this.gameObject.SetActive(false);
+        //audio.Play();
+        //movie.Play();
 
         //DontDestroyOnLoad(movie);
         //DontDestroyOnLoad(audio);
