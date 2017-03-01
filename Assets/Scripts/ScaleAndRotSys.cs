@@ -96,15 +96,15 @@ public class ScaleAndRotSys : MonoBehaviour
         {
             CreateEndPoints(transform.TransformPoint(vetex *1.05f));
         }
-        Vector3 p1 = verticles[0] * 1.05f;
-        Vector3 p2 = verticles[1] * 1.05f;
-        Vector3 p3 = verticles[2] * 1.05f;
-        Vector3 p4 = verticles[3] * 1.05f;
+        //Vector3 p1 = verticles[0] * 1.05f;
+        //Vector3 p2 = verticles[1] * 1.05f;
+        //Vector3 p3 = verticles[2] * 1.05f;
+        //Vector3 p4 = verticles[3] * 1.05f;
 
-        Debug.DrawLine(p1,p3,Color.blue,10);
-        Debug.DrawLine(p2, p3, Color.blue,10);
-        Debug.DrawLine(p2, p4, Color.blue, 10);
-        Debug.DrawLine(p1, p4, Color.blue, 10);
+        //Debug.DrawLine(p1,p3,Color.blue,10);
+        //Debug.DrawLine(p2, p3, Color.blue,10);
+        //Debug.DrawLine(p2, p4, Color.blue, 10);
+        //Debug.DrawLine(p1, p4, Color.blue, 10);
         // apply material
         renderer.material = SelectMaterial;
     }
@@ -122,9 +122,6 @@ public class ScaleAndRotSys : MonoBehaviour
         cube.AddComponent<HandDraggable>();
         cube.transform.position = position;
         cube.transform.parent = this.transform;
-        
-
-
         Renderer cubeRenderer = cube.GetComponent<Renderer>();
         cubeRenderer.material = ScaleMaterial;
     }

@@ -217,8 +217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6, y: 78.8}
-  m_SizeDelta: {x: 228.4, y: 66.6}
+  m_AnchoredPosition: {x: 0.6, y: 0.049423}
+  m_SizeDelta: {x: 228, y: 224.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &134516980
 MonoBehaviour:
@@ -918,8 +918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f938b92c7da761469c5c3e496e688e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SelectColor: {r: 0, g: 1, b: 0.25517225, a: 0.5019608}
-  ScaleColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  SelectColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  ScaleColor: {r: 0, g: 1, b: 0.46417648, a: 0.5019608}
 --- !u!33 &1030233826
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2104,7 +2104,6 @@ GameObject:
   - component: {fileID: 1956754109}
   - component: {fileID: 1956754108}
   - component: {fileID: 1956754110}
-  - component: {fileID: 1956754111}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Cursor
@@ -2172,19 +2171,6 @@ MonoBehaviour:
   CursorOnHolograms: {fileID: 1517865171}
   CursorOffHolograms: {fileID: 1517865169}
   distance: 0.01
---- !u!114 &1956754111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1956754106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afa1876370cf1a4e86db0d25c64142a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SelectColor: {r: 0.42352945, g: 0.4039216, b: 0.40000004, a: 0}
-  ScaleColor: {r: 0.42352945, g: 0.4039216, b: 0.40000004, a: 0}
 --- !u!1 &2135427325
 GameObject:
   m_ObjectHideFlags: 0
