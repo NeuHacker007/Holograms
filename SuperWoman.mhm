@@ -1,0 +1,38 @@
+# Written by MakeHuman 1.1.0
+version v1.1.0
+tags SuperWoman
+camera 336.0 26.5 0.381598990055 -0.0651361119295 0.494519876047 2.0375
+modifier macrodetails-universal/Muscle 0.544000
+modifier macrodetails/African 0.333333
+modifier macrodetails-proportions/BodyProportions 0.500000
+modifier macrodetails/Gender 0.000000
+modifier macrodetails-height/Height 0.650000
+modifier breast/BreastSize 0.562000
+modifier armslegs/l-hand-fingers-diameter-decr|incr -0.576000
+modifier armslegs/r-hand-fingers-diameter-decr|incr -0.410000
+modifier macrodetails/Age 0.479000
+modifier breast/BreastFirmness 0.562000
+modifier macrodetails/Asian 0.333333
+modifier armslegs/l-hand-trans-in|out -0.272000
+modifier armslegs/l-hand-fingers-distance-decr|incr -0.696000
+modifier head/head-fat-decr|incr -0.392000
+modifier head/head-age-decr|incr -0.096000
+modifier macrodetails/Caucasian 0.333333
+modifier armslegs/r-hand-fingers-distance-decr|incr -0.650000
+modifier armslegs/r-hand-trans-in|out 0.226000
+modifier macrodetails-universal/Weight 0.382000
+tongue tongue01 52ad91a3-caad-4e50-8c38-67634e5e789c
+teeth Teeth_Shape01 784ee1fc-0362-42b6-8f13-c36294bb4bd3
+proxy female_muscle_13442 20a78cb1-52c2-4bf5-87c7-96e2638b0135
+hair long01 6c6b0bb1-3608-40b8-9108-4bfd8fa71e39
+skeleton default.mhskel
+eyebrows eyebrow002 a4e73c2f-3a12-47c8-b706-31a68cac6907
+eyes Low-Poly 1cc97a30-85a1-42e6-a9f7-b3e753732baa
+pose standing02.bvh
+clothes female_elegantsuit01 8bb26477-c09f-4439-b05f-961516acf662
+clothes shoes03 ad622a26-da1e-4e3c-9f8e-454edf10d504
+clothesHideFaces True
+skinMaterial skins/young_asian_female/young_asian_female.mhmat
+material long01 6c6b0bb1-3608-40b8-9108-4bfd8fa71e39 long01.mhmat
+material Low-Poly 1cc97a30-85a1-42e6-a9f7-b3e753732baa eyes/materials/brown.mhmat
+subdivide False
