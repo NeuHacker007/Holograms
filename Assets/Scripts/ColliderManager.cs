@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class ColliderManager : MonoBehaviour
 {
-    private  GameObject txtWindow;
-    private  Text text;
+    private GameObject txtWindow;
+    private Text text;
     private float timercount = 0.0f;
     private int index;
     private bool isTalking = false;
@@ -20,7 +20,7 @@ public class ColliderManager : MonoBehaviour
         {
             initial();
         }
-        Debug.Log("Hi");
+         
     }
 
     void OnLevelWasLoaded(int level)
@@ -32,7 +32,7 @@ public class ColliderManager : MonoBehaviour
     {
         txtWindow = GameObject.Find("TextDisPlayWindow");
         //DontDestroyOnLoad(txtWindow);
-        
+
         //DontDestroyOnLoad(this.gameObject);
         text = txtWindow.GetComponent<Text>();
         timercount = TextManager.Instance.timer * 1000000.00f;
@@ -71,6 +71,7 @@ public class ColliderManager : MonoBehaviour
         isTalking = true;
         // this will give us a timer function which the nextLines function will be called
         // after 5.0f seconds.
+        Time.timeScale = 1;
         Invoke("nextLines", 5.0f);
     }
 
@@ -78,6 +79,8 @@ public class ColliderManager : MonoBehaviour
     {
         if (isTalking)
         {
+            //GameObject guopin = GameObject.Find("guopin");
+            //guopin.AddComponent<ColliderManager>();
             // This will iterate all the Messages that is specified from Unity Inspector
             // or use the default settings in the TextManager class.This part, the index
             // is start from 1 which is the sencond lines in the message Array because
@@ -88,24 +91,30 @@ public class ColliderManager : MonoBehaviour
                 // The reason why we use StartCoroutine function is that we have already
                 // used the Invoke function previously. I tested to use Invoke twice but failed
                 // to do so here. Therefore, we choose to use StartCoroutine function. 
-                StartCoroutine(printLines());
-
+              
+               StartCoroutine(printLines());
+             // Invoke("printLines", 5.0f);
             }
         }
     }
-    IEnumerator printLines()
+   IEnumerator printLines()
     {
+
+
         if (isTalking && index < TextManager.message.Length && index > 0)
         {
-           // yield return new WaitForSeconds(5.0f);
+           // yield return new WaitForSeconds(5);
             text.text = TextManager.message[index++];
-            
-            Debug.Log("***********"+ text.text);
+
+            Debug.Log("***********" + text.text);
+
             Invoke("nextLines", 5.0f);
-           
         }
-        return null;
+        return TextManager.message.GetEnumerator();
+        
     }
 
 }
+
+
 
